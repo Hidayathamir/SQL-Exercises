@@ -1,0 +1,90 @@
+version: "3"
+services:
+  mysql-container-1:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-1
+    ports:
+      - "3401:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./01_the_computer_store/:/docker-entrypoint-initdb.d/
+  mysql-container-2:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-2
+    ports:
+      - "3402:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./02_employee_management/:/docker-entrypoint-initdb.d/
+  mysql-container-3:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-3
+    ports:
+      - "3403:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./03_the_warehouse/:/docker-entrypoint-initdb.d/
+  mysql-container-4:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-4
+    ports:
+      - "3404:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./04_movie_theatres/:/docker-entrypoint-initdb.d/
+  mysql-container-5:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-5
+    ports:
+      - "3405:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./05_pieces_and_providers/:/docker-entrypoint-initdb.d/
+  mysql-container-6:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-6
+    ports:
+      - "3406:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./06_scientists/:/docker-entrypoint-initdb.d/
+  mysql-container-7:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-7
+    ports:
+      - "3407:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./07_planet_express/:/docker-entrypoint-initdb.d/
+  mysql-container-8:
+    image: mysql/mysql-server:latest
+    container_name: mysql-container-8
+    ports:
+      - "3408:3306"
+    environment:
+      MYSQL_DATABASE: sql_exercises
+      MYSQL_USER: sql_exercises
+      MYSQL_PASSWORD: sql_exercises
+    volumes:
+      - ./08_the_hospital/:/docker-entrypoint-initdb.d/
